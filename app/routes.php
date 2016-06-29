@@ -6,10 +6,40 @@ $routes = [
         'controller' => 'HomeController',
         'action'     => 'indexAction',
     ],
+    'produit.modif'       => [
+        'url'        => '/produit/modif',
+        'controller' => 'ProduitController',
+        'action'     => 'modifAction',
+    ],
+    'produit.update'       => [
+        'url'        => '/produit/update',
+        'controller' => 'ProduitController',
+        'action'     => 'updateAction',
+    ],
+    'produit.create'       => [
+        'url'        => '/produit/create',
+        'controller' => 'ProduitController',
+        'action'     => 'produitAction',
+    ],
+    'produit.list'       => [
+        'url'        => '/produit/listProduit',
+        'controller' => 'ProduitController',
+        'action'     => 'listProduitAction',
+    ],
+    'produit.delete'       => [
+        'url'        => '/produit/delete',
+        'controller' => 'ProduitController',
+        'action'     => 'deleteAction',
+    ],
     'contact'     => [
         'url'        => '/contact',
         'controller' => 'ContactController',
         'action'     => 'contactAction'
+    ],
+    'list'     => [
+        'url'        => '/contact/list',
+        'controller' => 'ContactController',
+        'action'     => 'listAction'
     ],
     'wiki'        => [
         'url'        => '/wiki',
