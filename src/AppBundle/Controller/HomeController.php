@@ -12,6 +12,18 @@ class HomeController extends Controller
     }
 
     public function wikiAction()
+{
+    $nbrArticle = 25;
+    $marques = ['apple', 'samsung', 'intel'];
+    $produits = ['clef', 'lampe', 'stylo', 'gomme'];
+
+    return $this->render('Home/wiki.php', [
+        'nbrArticle' => $nbrArticle,
+        'marques'    => $marques,
+        'produits'   => $produits,
+    ]);
+}
+    public function testAction()
     {
         $nbrArticle = 25;
         $marques = ['apple', 'samsung', 'intel'];

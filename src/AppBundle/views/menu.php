@@ -9,12 +9,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo $path('index') ?>">Mon commerce</a>
+            <a class="navbar-brand" href="<?php echo $path('index') ?>">Shopping Power</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="<?php echo $path('wiki') ?>">Wiki</a></li>
                 <li><a href="<?php echo $path('articles') ?>">Articles</a></li>
+                <li><a href="<?php echo $path('test') ?>">Test</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">

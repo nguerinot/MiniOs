@@ -6,10 +6,20 @@ $routes = [
         'controller' => 'HomeController',
         'action'     => 'indexAction',
     ],
+    'contact'     => [
+        'url'        => '/contact',
+        'controller' => 'ContactController',
+        'action'     => 'contactAction'
+    ],
     'wiki'        => [
         'url'        => '/wiki',
         'controller' => 'HomeController',
         'action'     => 'wikiAction',
+    ],
+    'test'        => [
+        'url'        => '/test',
+        'controller' => 'HomeController',
+        'action'     => 'testAction',
     ],
     'articles'         => [
         'url'        => '/articles',
