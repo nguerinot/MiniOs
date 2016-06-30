@@ -6,6 +6,16 @@ $routes = [
         'controller' => 'HomeController',
         'action'     => 'indexAction',
     ],
+    ' user.enregistrerCompte'     =>[
+        'url'        => '/user/creation',
+        'controller' => 'UserController',
+        'action'     => 'enregistrerCompteAction',
+    ],
+    'user.creation'     =>[
+        'url'        => '/user/creation',
+        'controller' => 'UserController',
+        'action'     => 'creationUserAction',
+    ],
     'produitType.creation'       => [
         'url'        => '/produitType/creation',
         'controller' => 'ProduitTypeController',

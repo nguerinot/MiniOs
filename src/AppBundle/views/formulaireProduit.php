@@ -2,7 +2,7 @@
     <body>
     <?php echo $path($pathChemin) ?>
 
-        <form action="<?php echo $path($pathChemin) ?>" method="post"  enctype="multipart/form-data">
+        <form action="<?php echo $path($pathChemin) ?>" method="post" >
             <input type="hidden" name="form[id]" value="<?php echo $id; ?>" />
             
             Nom:   <input type="text" name="form[nom]"    /></br>

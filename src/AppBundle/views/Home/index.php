@@ -6,11 +6,19 @@
         <div class="jumbotron">
             <h1>Mon site</h1>
 
-            <p>Mon texte</p>
+            <p>Connect toi </p>
 
             <p>
-                <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Bouton !!
-                    &raquo;</a>
+                <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Connexion
+
+                </a>
+            </p>
+            <p> crée un compte</p>
+
+            <p>
+                <a class="btn btn-lg btn-primary" href="<?php echo $path('user.creation') ?>" role="button">Création de compte
+                   
+                </a>
             </p>
         </div>
     </div>
