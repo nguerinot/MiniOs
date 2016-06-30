@@ -4,7 +4,7 @@
     <div class="col-md-12">
         <!-- Main component for a primary marketing message or call to action -->
         <div class="jumbotron">
-            <h1>Création de produit</h1>
+            <h2>Modification de produit</h2>
 
             <?php if (isset($errors)) { ?>
                 <p> Il y a une erreur :( recommencezla modif du produit </p>
@@ -16,12 +16,7 @@
             echo 'voici l id du produit : ' . $id;
             ?>
 
-            <form action="<?php echo $path('produit.modif') ?>" method="post">
-                Nom: <input type="text" name="form[nom]"/></br>
-                Prix: <input type="text" name="form[prix]"/></br>
-                <input type="text" name="form[id]" value="<?php echo $id ?>"/>
-                <input type="submit" name="submit" value="Envoyer"/>
-            </form>
+            <?php include __DIR__ . '/../formulaireProduit.php'; ?>
 
             <p>
 

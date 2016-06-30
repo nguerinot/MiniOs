@@ -16,6 +16,9 @@
                 <li><a href="<?php echo $path('wiki') ?>">Wiki</a></li>
                 <li><a href="<?php echo $path('articles') ?>">Articles</a></li>
                 <li><a href="<?php echo $path('test') ?>">Test</a></li>
+                <li><a href="<?php echo $path('produit.list') ?>">Produit</a></li>
+                <li><a href="<?php echo $path('produitType.create') ?>">Type de Produit</a></li>
+
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">

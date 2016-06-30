@@ -14,7 +14,28 @@
             }else
             {
                 echo 'votre article a bien été ajouté';
-            }?>
+                ?>
+                <table class="table">
+                <tr>
+                    <td> Crér un nouveau produit</td>
+                    <td>
+                        <a href="<?php echo $path('produit.create') ?>"
+                           type="button"
+                           class="btn btn-success">Créer
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Modifier un nouveau produit</td>
+                    <td>
+                        <a href="<?php echo $path('produit.list') ?>"
+                           type="button"
+                           class="btn btn-info">Modif/Supp
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <?php }?>
 
             <p>
 

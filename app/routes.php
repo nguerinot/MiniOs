@@ -6,6 +6,16 @@ $routes = [
         'controller' => 'HomeController',
         'action'     => 'indexAction',
     ],
+    'produitType.creation'       => [
+        'url'        => '/produitType/creation',
+        'controller' => 'ProduitTypeController',
+        'action'     => 'creationAction',
+    ],
+    'produitType.create'       => [
+        'url'        => '/produitType/create',
+        'controller' => 'ProduitTypeController',
+        'action'     => 'createAction',
+    ],
     'produit.modif'       => [
         'url'        => '/produit/modif',
         'controller' => 'ProduitController',

@@ -38,7 +38,7 @@ class ContactController extends Controller
 
                 file_put_contents($filename, $filecontent);
 
-                 mail ($form['email'], "message de verif", $content);
+                 //mail ($form['email'], "message de verif", $content);
 
                 if (isset($_FILES['photo']['name'])) {
                     $rootDir = 'c:/wamp64/www/minios/web/img/';

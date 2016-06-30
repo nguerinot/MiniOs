@@ -13,14 +13,9 @@
                 }
             }?>
 
-            <form action="<?php echo $path('produit.create') ?>" method="post"  enctype="multipart/form-data">
-                Nom:   <input type="text" name="form[nom]"    /></br>
-                Prix:   <input type="text" name="form[prix]" /></br>
-                Commentaire   <input type="text" name="form[commentaire]" /></br>
-                Photo:  Balance la photo de ton gadget ... <br />
-                <input type="file" name="photo" /><br />
-                <input type="submit" name="submit" value="Envoyer" />
-            </form>
+
+            <?php include __DIR__ . '/../formulaireProduit.php'; ?>
+            
 
             <p>
 
