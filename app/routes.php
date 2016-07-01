@@ -6,10 +6,30 @@ $routes = [
         'controller' => 'HomeController',
         'action'     => 'indexAction',
     ],
+    'user.updateUser'       => [
+        'url'        => '/user/update',
+        'controller' => 'UserController',
+        'action'     => 'updateUserAction',
+    ],
+    'user.update2'       => [
+        'url'        => '/user/update2',
+        'controller' => 'UserController',
+        'action'     => 'userUpdateAction',
+    ],
+    'accueil'       => [
+        'url'        => '/accueil',
+        'controller' => 'HomeController',
+        'action'     => 'accueilAction',
+    ],
     ' user.enregistrerCompte'     =>[
         'url'        => '/user/creation',
         'controller' => 'UserController',
         'action'     => 'enregistrerCompteAction',
+    ],
+    'user.connection'     =>[
+        'url'        => '/user/connection',
+        'controller' => 'UserController',
+        'action'     => 'connectionUserAction',
     ],
     'user.creation'     =>[
         'url'        => '/user/creation',

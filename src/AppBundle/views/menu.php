@@ -25,15 +25,33 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">
                         <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                        Utilisateur <span class="caret"></span>
+                        <?php
+                        if(isset($_SESSION['user']))
+                        {
+                            echo $_SESSION['user']['username'] ?><span class="caret"></span>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">Informations</li>
+                                <li><a href="<?php echo $path('user.updateUser') ?>">Update</a></li>
+                                <input type="hidden" name = "form[id]" value="<?php $_SESSION['user']['id'] ?>" />
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">Autre</li>
+                                <li><a href="<?php echo $path('index') ?>">Deconnexion</a></li>
+                            </ul>
+
+                            <?php
+                        }else
+                        {
+                            echo 'qui es tu ?';?><span class="caret"></span>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">Connection</li>
+                                <li><a href="<?php echo $path('user.connection') ?>">connexion</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">Création de Profil</li>
+                                <li><a href="<?php echo $path('user.creation') ?>">Create</a></li>
+                            </ul>
+                        <?php }?>
                     </a>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-header">Informations</li>
-                        <li><a href="#">Profil</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">Autre</li>
-                        <li><a href="#">Deconnexion</a></li>
-                    </ul>
+
                 </li>
             </ul>
         </div><!--/.nav-collapse -->

@@ -1,5 +1,12 @@
 <?php
 
+session_start();
+$_SESSION['autoriser'] = false ;
+
+
+
+    
+
 include __DIR__ . '/../vendor/autoload.php';
 
 use Framework\Kernel;

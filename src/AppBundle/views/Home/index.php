@@ -5,18 +5,17 @@
         <!-- Main component for a primary marketing message or call to action -->
         <div class="jumbotron">
             <h1>Mon site</h1>
-
             <p>Connect toi </p>
 
             <p>
-                <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Connexion
+                <a class="btn btn-lg btn-primary" href="<?php echo $path('user.connection') ?>" role="button">Connexion
 
                 </a>
             </p>
             <p> crée un compte</p>
 
             <p>
-                <a class="btn btn-lg btn-primary" href="<?php echo $path('user.creation') ?>" role="button">Création de compte
+                <a class="btn btn-lg btn-primary" href="    " role="button">Création de compte
                    
                 </a>
             </p>

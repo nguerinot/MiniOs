@@ -98,7 +98,6 @@ class ProduitController extends Controller
         $updateProduit->bindParam(':id', $form['id'], PDO::PARAM_INT);
         $updateProduit->bindParam(':nom', $form['nom'], PDO::PARAM_STR);
         $updateProduit->bindParam(':prix', $form['prix'], PDO::PARAM_INT);
-
         $updateProduit->bindParam(':id_produit_type', $form['id_produit_type'], PDO::PARAM_INT);
 
         $updateProduit->execute();

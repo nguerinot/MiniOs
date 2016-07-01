@@ -8,7 +8,13 @@ class HomeController extends Controller
 {
     public function indexAction()
     {
+        session_unset();
         return $this->render('Home/index.php');
+    }
+
+    public function accueilAction()
+    {
+        return $this->render('Home/accueil.php');
     }
 
     public function wikiAction()
